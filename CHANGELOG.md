@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v0.0.0.1 2019-07-01
+
+Started adding application version details.
+
 ## v0.0.0.0 2019-07-01
 
 Initial project creation
