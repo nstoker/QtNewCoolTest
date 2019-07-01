@@ -16,6 +16,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::initialiseFooter(){
-    QLabel *versionLabel = new QLabel("APP_VERSION");
+    QString version(APP_VERSION);
+    QLabel *versionLabel = new QLabel(version);
     statusBar()->addWidget(versionLabel);
 }
