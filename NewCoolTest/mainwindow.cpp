@@ -21,5 +21,5 @@ void MainWindow::initialiseFooter(){
 
     QString version(GIT_VERSION);
     QLabel *versionLabel = new QLabel(version);
-    statusBar()->addWidget(versionLabel);
+    statusBar()->addPermanentWidget(versionLabel);
 }
