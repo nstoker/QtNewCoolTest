@@ -1,6 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include <QLabel>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -16,7 +17,9 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::initialiseFooter(){
-    QString version(APP_VERSION);
+    qDebug() << GIT_VERSION;
+
+    QString version(GIT_VERSION);
     QLabel *versionLabel = new QLabel(version);
     statusBar()->addWidget(versionLabel);
 }

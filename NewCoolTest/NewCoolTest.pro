@@ -11,14 +11,14 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 TARGET = NewCoolTest
 TEMPLATE = app
 
-APP_VERSION = 0.0.0.2
+GIT_VERSION = $$system(git --git-dir $$PWD/../.git --work-tree $$PWD/.. describe --always --tags)
 
 # The following define makes your compiler emit warnings if you use
 # any feature of Qt which has been marked as deprecated (the exact warnings
 # depend on your compiler). Please consult the documentation of the
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
-DEFINES += APP_VERSION=\"\\\"$${APP_VERSION}\\\"\"
+DEFINES += GIT_VERSION=\"\\\"$${GIT_VERSION}\\\"\"
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
