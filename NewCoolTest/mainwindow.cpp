@@ -3,6 +3,8 @@
 #include <QLabel>
 #include <QDebug>
 
+#include "application_version.h"
+
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
@@ -17,9 +19,7 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::initialiseFooter(){
-    qDebug() << APP_TITLE<< "-" << GIT_VERSION;
     setWindowTitle(APP_TITLE);
-    QString version(GIT_VERSION);
-    QLabel *versionLabel = new QLabel(version);
+    QLabel *versionLabel = new QLabel(appVersionString);
     statusBar()->addPermanentWidget(versionLabel);
 }
