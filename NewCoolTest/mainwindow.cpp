@@ -20,6 +20,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::initialiseFooter(){
     setWindowTitle(APP_TITLE);
-    QLabel *versionLabel = new QLabel(appVersionString);
+    QLabel *versionLabel = new QLabel("v" + appVersionString);
+    versionLabel->setAlignment(Qt::AlignRight);
     statusBar()->addPermanentWidget(versionLabel);
 }
