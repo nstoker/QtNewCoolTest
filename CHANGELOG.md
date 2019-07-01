@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+Using the git tag to display version number.
+
+Add app title.
+
 ## v0.0.0.1 2019-07-01
 
 Started adding application version details.
