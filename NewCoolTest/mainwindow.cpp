@@ -17,8 +17,8 @@ MainWindow::~MainWindow()
 }
 
 void MainWindow::initialiseFooter(){
-    qDebug() << GIT_VERSION;
-
+    qDebug() << APP_TITLE<< "-" << GIT_VERSION;
+    setWindowTitle(APP_TITLE);
     QString version(GIT_VERSION);
     QLabel *versionLabel = new QLabel(version);
     statusBar()->addPermanentWidget(versionLabel);

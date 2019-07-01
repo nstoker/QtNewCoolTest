@@ -10,7 +10,7 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
 TARGET = NewCoolTest
 TEMPLATE = app
-
+APP_TITLE = "Cool Test"
 GIT_VERSION = $$system(git --git-dir $$PWD/../.git --work-tree $$PWD/.. describe --always --tags)
 
 # The following define makes your compiler emit warnings if you use
@@ -19,6 +19,7 @@ GIT_VERSION = $$system(git --git-dir $$PWD/../.git --work-tree $$PWD/.. describe
 # deprecated API in order to know how to port your code away from it.
 DEFINES += QT_DEPRECATED_WARNINGS
 DEFINES += GIT_VERSION=\"\\\"$${GIT_VERSION}\\\"\"
+DEFINES += APP_TITLE=\"\\\"$${APP_TITLE}\\\"\"
 
 # You can also make your code fail to compile if you use deprecated APIs.
 # In order to do so, uncomment the following line.
